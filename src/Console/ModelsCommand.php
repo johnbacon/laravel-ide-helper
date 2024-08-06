@@ -810,10 +810,6 @@ class ModelsCommand extends Command
             if (isset($this->nullableColumns[$foreignKey])) {
                 return true;
             }
-
-            if (!in_array($foreignKey, $this->foreignKeyConstraintsColumns, true)) {
-                return true;
-            }
         }
 
         return false;
